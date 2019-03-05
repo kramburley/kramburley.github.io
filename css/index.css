@@ -3,15 +3,19 @@ html {
   text-align: center;
   align-content: center;
   vertical-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #00F;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 18% auto 18%;
   background-color: #a0a0a0;
-  grid-gap: 10px;
-  grid-column-gap: 10px;
-  font-size: 30px
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  padding: 5px;
+  font-size: 30px;
 }
 
 .grid-container > div {
@@ -21,16 +25,27 @@ html {
   font-size: 30px;
 }
 
+.header {
+  grid-column-start: 0;
+  grid-column-end: 3;
+}
+
 .navbar {
+  grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.leftside, .rightside {
-  grid-row-start: 2;
+.leftside,
+.rightside {
+  grid-row-start: 3;
   grid-row-end: 10;
 }
 
 .rightside {
   grid-column-start: 3;
+}
+
+.content {
+  grid-row-start: 3;
 }
