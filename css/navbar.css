@@ -8,17 +8,16 @@ li {
   display: inline;
   padding: 10px;
   text-align: center;
+  
 }
 
 li a {
     text-decoration: none;
-    color: blue;
-}
-
-a:active {
-    color: black;
+    border-radius: 8px;
+    padding: 0px 80px;
 }
 
 a:hover {
-    color: white;
+    background-color: white;
+
 }
