@@ -1,23 +1,35 @@
+@import url("index.css");
+
 ul {
-  list-style-type: none;
+  background: darkorange;
   margin: 0;
   padding: 0;
 }
 
 li {
   display: inline;
-  padding: 10px;
-  text-align: center;
-  
+  padding: 0px 10px;
 }
 
-li a {
-    text-decoration: none;
-    border-radius: 8px;
-    padding: 0px 80px;
+li:hover {
+  background: var(--nav-bg-color);
+  cursor: pointer;
 }
 
-a:hover {
-    background-color: white;
-    color: black;
+ul li ul {
+  background: var(--div-bg-color);
+
+  float: right;
+  position: absolute;
+  padding: 0 2rem;
+  display: none;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
 }

@@ -1,8 +1,15 @@
 :root {
-  --main-bg-color-gradient: linear-gradient(to bottom, rgb(241, 241, 191), #1a7cc7);
-  --main-bg-color: #cdffff;
+  --main-bg-color-gradient: linear-gradient(
+    to bottom,
+    rgb(241, 241, 191),
+    #1a7cc7
+  );
+  /* --main-bg-color: #cdffff; */
+  --main-bg-color: lightgray;
   --div-bg-color: #1a7cc7;
   --text-color: #e7f7ff;
+  --nav-bg-color: rgba(238, 89, 43, 0.932);
+  --nav-text-color: #000;
 }
 
 body,
@@ -11,6 +18,8 @@ html {
   align-content: center;
   vertical-align: center;
   height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: var(--text-color);
@@ -19,18 +28,21 @@ html {
 }
 
 div {
-  border-style: unset;
+  border-style: initial;
   border-color: crimson;
   border-width: 1px;
   border-radius: 8px;
+  /* width: 100%; */
 }
 
 a {
   color: var(--text-color);
+  text-decoration: none;
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: 18% auto 18%;
+  grid-template-columns: 13% auto 13%;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
   padding: 5px;
@@ -40,7 +52,7 @@ a {
 .grid-container > div {
   background-color: var(--div-bg-color);
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 8px;
   font-size: 30px;
 }
 
@@ -55,6 +67,7 @@ a {
   grid-column-start: 1;
   grid-column-end: 4;
   padding: 0px;
+  margin-bottom: 3rem;
 }
 
 .leftside,
