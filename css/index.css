@@ -11,11 +11,20 @@ html {
   border: 0;
   font-family: 'Lato', sans-serif;
   background-color: var(--main-bg-color); /* backmost background color*/
-  /*background-image: var(--main-bg-color-gradient);*/
+  color: var(--text-color)
 }
 
-a.navbar-brand {
-  margin: 0 16px;
-  text-align: center;
-  color: var(--text-color);
+div.information-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+
+#status, #contact, #skills, #work, #projects {
+  /* background: var(--text-color); */
+  display: none;
+  height: 50%;
+  width: 50%;
+}
+

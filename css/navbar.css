@@ -1,8 +1,16 @@
+@import url("index.css");
+
+.navbar-brand {
+  margin: 0 16px;
+  text-align: center;
+  color: var(--text-color);
+}
+
 .menu-text {
   font-size: 15px;
 }
 
-
 .menu-icon {
   font-size: 40px;
 }
+
