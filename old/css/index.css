@@ -1,0 +1,85 @@
+:root {
+  --main-bg-color-gradient: linear-gradient(
+    to bottom,
+    rgb(241, 241, 191),
+    #1a7cc7
+  );
+  /* --main-bg-color: #cdffff; */
+  --main-bg-color: lightgray;
+  --div-bg-color: #1a7cc7;
+  --text-color: #e7f7ff;
+  --nav-bg-color: rgba(238, 89, 43, 0.932);
+  --nav-text-color: #000;
+}
+
+body,
+html {
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: var(--main-bg-color); /* backmost background color*/
+  background-image: var(--main-bg-color-gradient);
+}
+
+div {
+  border-style: initial;
+  border-color: crimson;
+  border-width: 1px;
+  border-radius: 8px;
+  /* width: 100%; */
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 13% auto 13%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.grid-container > div {
+  background-color: var(--div-bg-color);
+  text-align: center;
+  padding: 20px 8px;
+  font-size: 30px;
+}
+
+.header {
+  text-shadow: 1px 2px 5px yellow;
+  grid-column-start: 0;
+  grid-column-end: 3;
+}
+
+.grid-container .navbar {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 0px;
+  margin-bottom: 3rem;
+}
+
+.leftside,
+.rightside {
+  grid-row-start: 3;
+  grid-row-end: 10;
+}
+
+.rightside {
+  grid-column-start: 3;
+}
+
+.content {
+  grid-row-start: 3;
+}
