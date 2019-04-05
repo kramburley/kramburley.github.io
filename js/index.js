@@ -10,3 +10,5 @@ function disable_display() {
   document.getElementById("skills").style.display = "none";
   document.getElementById("contact").style.display = "none";
 }
+
+

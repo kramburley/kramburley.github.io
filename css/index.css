@@ -28,3 +28,7 @@ div.information-container {
   width: 50%;
 }
 
+table, th, tr, td {
+  /* border: 5px solid green; */
+}
+
