@@ -1,6 +1,8 @@
 function display(window) {
   disable_display();
   document.getElementById(window).style.display = "block";
+
+  //$("#information-container").load("content/status.html");
 }
 
 function disable_display() {
